@@ -12,4 +12,4 @@ MAINTAINER  Matt Jackson <mjj@frogdream.net>
 RUN     apt-get update && apt-get install -y bind9
 
 EXPOSE      53
-CMD     /etc/init.d/bind9 start && tail -f /var/log/*
+CMD     /etc/init.d/bind9 start && tail -f /var/log/named/*
